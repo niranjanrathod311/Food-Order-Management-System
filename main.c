@@ -26,6 +26,7 @@ int main ()
         printf ("1. Order\n2. Serve\n3. Display \n4. Exit the program\n");
         printf("Enter your choice : \n");
         int in;
+        int f;
         scanf ("%d", &in);
         getchar ();
         switch (in){
@@ -44,10 +45,18 @@ int main ()
             case 4 : {
                 system ("COLOR 2");
                 printf ("We are closed come by again\n\n");
+                printf ("How much you will rate us for services ? :) (1-10)\n");
+                scanf("%d",&f);
+                for(int i=1; i<=f; i++) {
+                    printf("* ");
+                }
+                printf("    :) \n");
+                printf ("\nThanks for your valuable feedback :)\n\n");
                 printf ("Project submitted by Team ERROR NOT FOUND\n\n");
                 printf ("Our hearty gratitude to honorable professor\n\n");
                 printf ("           Ms. Hetal Jethani       \n");
                 printf ("\n DEVELOPED BY Niranjan Rathod\n\n");
+                getch();
                 return 0;
             }
         }
